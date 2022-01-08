@@ -1,0 +1,33 @@
+{
+  "name": "rdf-ext.org",
+  "private": true,
+  "version": "0.0.4",
+  "description": "Home of RDF-Ext",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build --dest=dist src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rdf-ext/rdf-ext.org.git"
+  },
+  "keywords": [
+    "home",
+    "rdf",
+    "rdfjs",
+    "rdf-ext"
+  ],
+  "author": "Thomas Bergwinkl <bergi@axolotlfarm.org> (https://www.bergnet.org/people/bergi/card#me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rdf-ext/rdf-ext.org/issues"
+  },
+  "homepage": "https://github.com/rdf-ext/rdf-ext.org",
+  "devDependencies": {
+    "@vuepress/plugin-register-components": "^2.0.0-beta.32",
+    "@vuepress/plugin-search": "^2.0.0-beta.32",
+    "rdf-ext-examples": "https://git@github.com/rdf-ext/rdf-ext-examples.git#master",
+    "vuepress": "^2.0.0-beta.32"
+  }
+}
