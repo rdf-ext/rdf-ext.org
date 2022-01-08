@@ -1,7 +1,7 @@
 {
   "name": "rdf-ext.org",
   "private": true,
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Home of RDF-Ext",
   "main": "index.js",
   "scripts": {
