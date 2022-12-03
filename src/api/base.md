@@ -14,14 +14,14 @@ interface BaseFormats {
 The [@rdfjs/data-model](https://github.com/rdfjs-base/data-model) package implements the [RDF/JS: Data model specification](http://rdf.js.org/data-model-spec/).
 See the specification for more details.
 
-## DataModelFactory
+### DataModelFactory
 
 ## Dataset
 
 The [@rdfjs/dataset](https://github.com/rdfjs-base/data-model) package implements the [RDF/JS: Dataset specification](https://rdf.js.org/dataset-spec/).
 See the specification for more details.
 
-## DatasetFactory
+### DatasetFactory
 
 ## Environment
 
@@ -32,7 +32,7 @@ interface Environment {
 };
 ```
 
-## Factory
+### Factory
 
 ```webidl
 interface Factory {
@@ -43,7 +43,7 @@ interface Factory {
 
 ## Fetch
 
-## FetchFactory
+### FetchFactory
 
 ```webidl
 interface FetchFactory {
@@ -59,7 +59,7 @@ interface Formats extends BaseFormats {
 };
 ```
 
-## FormatsFactory
+### FormatsFactory
 
 ```webidl
 interface FormatsFactory {
@@ -73,7 +73,7 @@ interface FormatsFactory {
 NamedNode Namespace(String path);
 ```
 
-## NamespaceFactory
+### NamespaceFactory
 
 ```webidl
 interface FormatsFactory {
@@ -95,7 +95,7 @@ interface TermMap extends Map {
 };
 ```
 
-## TermMapFactory
+### TermMapFactory
 
 ```webidl
 interface TermMapFactory {
@@ -110,7 +110,7 @@ interface TermSet extends Set {
 };
 ```
 
-## TermSetFactory
+### TermSetFactory
 
 ```webidl
 interface TermSetFactory {
@@ -128,7 +128,7 @@ interface Traverser {
 };
 ```
 
-## TraverserFactory
+### TraverserFactory
 
 ```webidl
 interface TraverserFactory {
