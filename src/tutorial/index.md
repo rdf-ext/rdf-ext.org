@@ -33,28 +33,34 @@ The example shows how to do it:
 ## Browser
 
 A module bundler is required to build a Web application with RDF-Ext.
-The most common one is [webpack](https://webpack.js.org/).
-This part of the tutorial will show you how to build a simple Web application with webpack. 
+[webpack](https://webpack.js.org/) is a very popular one, which we will use in this tutorial. 
 
 ### Dependencies
 
-First, you need to install webpack and some browser polyfills.
-The following command will install all of them and add them as a developer dependency:
+First, you need to install webpack and the webpack cli.
+The following command will install both and add them as a developer dependency:
 
 ```bash
-npm install --save-dev buffer process readable-stream webpack webpack-cli
+npm install --save-dev webpack webpack-cli
 ```
 
-### Config
-
-A configuration file for webpack is required to enable the polyfills.
-If you use the filename `webpack.config.cjs`, webpack will find the file by itself.
-The content should look like this:
-
-@[code js](../../node_modules/rdf-ext-examples/webpack.config.cjs)
-
 ### Bundle
+
+Now you can run the bundler:
 
 ```bash
 npx webpack ./examples/browser/fetch-resource.js --output-filename=fetch-resource.js
 ```
+
+### Server
+
+The repository contains a small Web server that hosts the examples.
+You can use the launch configuration in VSCode/Gitpod to start it.
+Or with the following command:  
+
+```bash
+node server.js 
+```
+
+Gitpod will automatically open a browser window.
+On a local environment, open this link: [http://localhost:8080/](http://localhost:8080/) 
