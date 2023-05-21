@@ -33,34 +33,28 @@ The example shows how to do it:
 ## Browser
 
 A module bundler is required to build a Web application with RDF-Ext.
-[webpack](https://webpack.js.org/) is a very popular one, which we will use in this tutorial. 
+[Vite](https://vitejs.dev/) is a modern, fast, and very popular one, which we will use in this tutorial. 
 
 ### Dependencies
 
-First, you need to install webpack and the webpack cli.
-The following command will install both and add them as a developer dependency:
+First, you need to install `vite`.
+The following command will install it and add it as a developer dependency:
 
 ```bash
-npm install --save-dev webpack webpack-cli
+npm install --save-dev `vite`
 ```
 
 ### Bundle
 
-Now you can run the bundler:
+Now you can run the bundler in developer mode.
+It will start a server and bundles the code on the fly:
 
 ```bash
-npx webpack ./examples/browser/fetch-resource.js --output-filename=fetch-resource.js
+vite dev examples/browser
 ```
 
-### Server
-
-The repository contains a small Web server that hosts the examples.
-You can use the launch configuration in VSCode/Gitpod to start it.
-Or with the following command:  
+Run the following command for a production build:
 
 ```bash
-node server.js 
+vite build --outDir=../../dist examples/browser
 ```
-
-Gitpod will automatically open a browser window.
-On a local environment, open this link: [http://localhost:8080/](http://localhost:8080/) 
