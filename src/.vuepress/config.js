@@ -1,7 +1,11 @@
-const { resolve } = require('path')
-const { description } = require('../../package')
+import { defaultTheme } from '@vuepress/theme-default'
+import { prismjsPlugin } from '@vuepress/plugin-prismjs'
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+import { searchPlugin } from '@vuepress/plugin-search'
+import { defineUserConfig } from 'vuepress'
+import { description } from '../../package.json'
 
-module.exports = {
+export default defineUserConfig({
   title: 'RDF-Ext',
   description: description,
   head: [
@@ -9,7 +13,7 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
-  themeConfig: {
+  theme: defaultTheme({
     editLink: false,
     darkMode: true,
     navbar: [
@@ -22,14 +26,14 @@ module.exports = {
         link: '/tutorial/'
       }
     ]
-  },
+  }),
   plugins: [
-    ['@vuepress/plugin-prismjs', {
+    prismjsPlugin({
       preloadLanguages: ['js', 'web-idl']
-    }],
-    ['@vuepress/plugin-register-components', {
-      componentsDir: resolve(__dirname, './components')
-    }],
-    '@vuepress/search'
+    }),
+    registerComponentsPlugin({
+      componentsDir: new URL('./components', import.meta.url).pathname
+    }),
+    searchPlugin()
   ]
-}
+})

@@ -27,11 +27,15 @@
   },
   "homepage": "https://github.com/rdf-ext/rdf-ext.org",
   "devDependencies": {
-    "@vuepress/plugin-register-components": "^2.0.0-beta.32",
-    "@vuepress/plugin-search": "^2.0.0-beta.32",
+    "@vuepress/client": "^2.0.0-beta.63",
+    "@vuepress/plugin-prismjs": "^2.0.0-beta.63",
+    "@vuepress/plugin-register-components": "^2.0.0-beta.63",
+    "@vuepress/plugin-search": "^2.0.0-beta.63",
+    "@vuepress/theme-default": "^2.0.0-beta.63",
     "md-processor": "^1.0.0",
     "rdf-ext-examples": "https://git@github.com/rdf-ext/rdf-ext-examples.git#1d88073b723a7ad69d3f286055a2e99f5ec38161",
     "rdf-ext-gh": "https://git@github.com/rdf-ext/.github.git#master",
-    "vuepress": "^2.0.0-beta.32"
+    "vue": "^3.3.4",
+    "vuepress": "^2.0.0-beta.63"
   }
 }
