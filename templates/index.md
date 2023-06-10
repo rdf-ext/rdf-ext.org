@@ -11,7 +11,10 @@ actions:
 
 RDF-Ext is a JavaScript library that extends the [RDF/JS](#rdf-js) specs to handle RDF data in a developer-friendly way.
 
-## RDF/JS
+@[import{Scope}](../node_modules/rdf-ext-gh/profile/README.md)
+@[import{Contributing}](../node_modules/rdf-ext-gh/profile/README.md)
+
+# Standards
 
 The core interfaces of RDF-Ext are based on the work by the [RDF JavaScript Libraries Community Group](https://www.w3.org/community/rdfjs/).
 Interfaces of the following specifications are used:

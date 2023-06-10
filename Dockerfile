@@ -4,6 +4,7 @@ RUN mkdir -p /build
 WORKDIR /build
 COPY package*.json .
 COPY src src
+COPY templates templates
 RUN npm ci && npm run build
 
 FROM nginx:1.20-alpine

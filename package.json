@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev src",
-    "build": "vuepress build --dest=dist src"
+    "build": "npm run build-preprocess && npm run build-vuepress",
+    "build-preprocess": "md-processor templates/index.md > src/index.md",
+    "build-vuepress": "vuepress build --dest=dist src"
   },
   "repository": {
     "type": "git",
@@ -27,7 +29,9 @@
   "devDependencies": {
     "@vuepress/plugin-register-components": "^2.0.0-beta.32",
     "@vuepress/plugin-search": "^2.0.0-beta.32",
+    "md-processor": "^1.0.0",
     "rdf-ext-examples": "https://git@github.com/rdf-ext/rdf-ext-examples.git#1d88073b723a7ad69d3f286055a2e99f5ec38161",
+    "rdf-ext-gh": "https://git@github.com/rdf-ext/.github.git#master",
     "vuepress": "^2.0.0-beta.32"
   }
 }
