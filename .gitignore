@@ -1,4 +1,6 @@
+.build
 dist
 node_modules
 src/.vuepress/.*
 src/index.md
+src/api/grapoi.md
