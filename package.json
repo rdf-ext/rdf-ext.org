@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev src",
-    "build": "npm run build-preprocess && npm run build-vuepress",
+    "build": "npm run build-jsdoc && npm run build-preprocess && npm run build-vuepress",
+    "build-jsdoc": "npm run build-jsdoc-grapoi",
+    "build-jsdoc-grapoi": "mkdir -p .build && jsdoc2md ./node_modules/grapoi/Grapoi.js ./node_modules/grapoi/PathList.js > .build/grapoi.md && md-processor templates/api/grapoi.md > src/api/grapoi.md",
     "build-preprocess": "md-processor templates/index.md > src/index.md",
     "build-vuepress": "vuepress build --dest=dist src"
   },
@@ -27,15 +29,17 @@
   },
   "homepage": "https://github.com/rdf-ext/rdf-ext.org",
   "devDependencies": {
-    "@vuepress/client": "^2.0.0-beta.63",
-    "@vuepress/plugin-prismjs": "^2.0.0-beta.63",
-    "@vuepress/plugin-register-components": "^2.0.0-beta.63",
-    "@vuepress/plugin-search": "^2.0.0-beta.63",
-    "@vuepress/theme-default": "^2.0.0-beta.63",
-    "md-processor": "^1.0.0",
+    "@vuepress/client": "^2.0.0-beta.66",
+    "@vuepress/plugin-prismjs": "^2.0.0-beta.66",
+    "@vuepress/plugin-register-components": "^2.0.0-beta.66",
+    "@vuepress/plugin-search": "^2.0.0-beta.66",
+    "@vuepress/theme-default": "^2.0.0-beta.66",
+    "grapoi": "^1.0.2",
+    "jsdoc-to-markdown": "^8.0.0",
+    "md-processor": "^1.2.0",
     "rdf-ext-examples": "https://git@github.com/rdf-ext/rdf-ext-examples.git#1d88073b723a7ad69d3f286055a2e99f5ec38161",
     "rdf-ext-gh": "https://git@github.com/rdf-ext/.github.git#master",
     "vue": "^3.3.4",
-    "vuepress": "^2.0.0-beta.63"
+    "vuepress": "^2.0.0-beta.66"
   }
 }

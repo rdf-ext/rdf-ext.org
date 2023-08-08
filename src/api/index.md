@@ -6,6 +6,11 @@ RDF-Ext uses many libraries from the [rdfjs-base](#rdfjs-base) organization.
 To simplify the usage, the factory handling is done for you.
 The features are available through the RDF-Ext factory.
 
+## [Grapoi](grapoi.html)
+
+Grapoi is a graph traversal library inspired by Gremlin.
+It allows querying Datasets in a readable and intuitive way.
+
 ## [Base](base.html)
 
 The packages in the GitHub organization [@rdfjs-base](https://github.com/rdfjs-base/) implement many basic features.
