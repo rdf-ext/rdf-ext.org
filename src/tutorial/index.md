@@ -6,6 +6,11 @@ sidebar: auto
 
 This tutorial will show you how to use RDF-Ext.
 
+::: tip
+The [example repository](https://github.com/rdf-ext/rdf-ext-examples) contains more examples and covers more topics than this tutorial currently does.
+If you don't find what you need on this page, it's still worth looking into the Gitpod workspace or checking the examples repository directly.
+:::
+
 ## Example Workspace
 
 All examples of this tutorial are available as [Gitpod](https://gitpod.io/) workspace:

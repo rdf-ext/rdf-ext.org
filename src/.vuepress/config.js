@@ -16,16 +16,34 @@ export default defineUserConfig({
   theme: defaultTheme({
     editLink: false,
     darkMode: true,
-    navbar: [
-      {
-        text: 'APIs',
-        link: '/api/',
-      },
-      {
-        text: 'Tutorial',
-        link: '/tutorial/'
-      }
-    ]
+    navbar: [{
+      text: 'APIs',
+      link: '/api/',
+    }, {
+      text: 'Tutorial',
+      link: '/tutorial/'
+    }, {
+      text: 'Libraries',
+      children: [{
+        text: 'rdf-elements',
+        link: 'https://github.com/rdf-ext/rdf-elements'
+      }, {
+        text: 'shacl-engine',
+        link: 'https://github.com/rdf-ext/shacl-engine'
+      }]
+    }, {
+      text: 'Tools',
+      children: [{
+        text: 'RDF Translator',
+        link: 'https://playground.rdf-ext.org/rdf-translator/'
+      }, {
+        text: 'SHACL Playground',
+        link: 'https://playground.rdf-ext.org/shacl/'
+      }, {
+        text: 'rdf-ext-cli',
+        link: 'https://github.com/rdf-ext/rdf-ext-cli'
+      }]
+    }]
   }),
   plugins: [
     prismjsPlugin({

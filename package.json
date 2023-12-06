@@ -29,17 +29,17 @@
   },
   "homepage": "https://github.com/rdf-ext/rdf-ext.org",
   "devDependencies": {
-    "@vuepress/client": "^2.0.0-beta.66",
-    "@vuepress/plugin-prismjs": "^2.0.0-beta.66",
-    "@vuepress/plugin-register-components": "^2.0.0-beta.66",
-    "@vuepress/plugin-search": "^2.0.0-beta.66",
-    "@vuepress/theme-default": "^2.0.0-beta.66",
-    "grapoi": "^1.0.2",
+    "@vuepress/client": "^2.0.0-rc.0",
+    "@vuepress/plugin-prismjs": "^2.0.0-rc.0",
+    "@vuepress/plugin-register-components": "^2.0.0-rc.0",
+    "@vuepress/plugin-search": "^2.0.0-rc.0",
+    "@vuepress/theme-default": "^2.0.0-rc.0",
+    "grapoi": "^1.1.0",
     "jsdoc-to-markdown": "^8.0.0",
     "md-processor": "^1.2.0",
-    "rdf-ext-examples": "https://git@github.com/rdf-ext/rdf-ext-examples.git#1d88073b723a7ad69d3f286055a2e99f5ec38161",
+    "rdf-ext-examples": "https://git@github.com/rdf-ext/rdf-ext-examples.git#v0.2.0",
     "rdf-ext-gh": "https://git@github.com/rdf-ext/.github.git#master",
-    "vue": "^3.3.4",
-    "vuepress": "^2.0.0-beta.66"
+    "vue": "^3.3.10",
+    "vuepress": "^2.0.0-rc.0"
   }
 }
