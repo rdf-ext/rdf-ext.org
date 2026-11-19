@@ -7,6 +7,6 @@ COPY src src
 COPY templates templates
 RUN npm ci && npm run build
 
-FROM nginx:1.25-alpine
+FROM nginx:1.30.7-alpine
 
 COPY --from=builder /build/dist /usr/share/nginx/html/
